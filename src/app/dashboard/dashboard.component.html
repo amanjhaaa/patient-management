@@ -1,0 +1,52 @@
+<div class="dashboard-container">
+  <!-- <header class="dashboard-header">
+    <div class="header-content">
+      <h1>Welcome to MyEpro Dashboard</h1>
+      <div class="user-info">
+        <span class="user-name">Aman Jha</span>
+        <button class="logout-btn" (click)="logout()">Logout</button>
+      </div>
+    </div> 
+  </header> -->
+<br>
+  <main class="dashboard-main">
+    <div class="dashboard-grid">
+      <div class="dashboard-card">
+        <div class="card-icon"></div>
+        <h3>Patients</h3>
+        <p>Manage patient records and information</p>
+        <button class="card-btn" routerLink = "/manage-patient">View Patients</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon"></div>
+        <h3>Appointments</h3>
+        <p>Schedule and manage appointments</p>
+        <button class="card-btn">View Appointments</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon"></div>
+        <h3>Medications</h3>
+        <p>Track prescriptions and medications</p>
+        <button class="card-btn" routerLink = "/manage-medication">View Medications</button>
+      </div>
+
+      <div class="dashboard-card">
+        <div class="card-icon"></div>
+        <h3>Reports</h3>
+        <p>Generate and view reports</p>
+        <button class="card-btn" routerLink = '/manage-reports'>View Reports</button>
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <h2>Quick Actions</h2>
+      <div class="action-buttons">
+        <button class="action-btn primary">Add New Patient</button>
+        <button class="action-btn secondary">Schedule Appointment</button>
+        <button class="action-btn secondary">Generate Report</button>
+      </div>
+    </div>
+  </main>
+</div>

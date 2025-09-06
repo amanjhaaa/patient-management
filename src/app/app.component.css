@@ -1,0 +1,11 @@
+app-header {
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ccc; /* horizontal line */
+    background: #f8f9fa;          /* optional light background */
+  }
+  
+  .main-content {
+    padding: 20px; /* space for the page content */
+  }
+  

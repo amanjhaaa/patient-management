@@ -1,0 +1,37 @@
+<p>patient works!</p>
+
+<div class="header-section">
+  
+  <button class="register-btn" routerLink = "/patient-registration">Register Patient</button>
+</div>
+
+<div *ngIf="patient; else noPatient" class="patient-details">
+  <table class="patient-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Patient ID</th>
+        <th>Age and Gender</th>
+        <th>Mobile Number</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr (click)="onRowClick(patient.patientId)" style="cursor: pointer;">
+        <!-- <tr *ngFor="let patientObject of patient"> -->
+        <td>{{patient.salutation}} {{patient.firstName}} {{patient.lastName}}</td>
+        <td>{{ patient.patientId }}</td>
+        <td>{{ patient.age }} ({{ patient.gender }})</td>
+        <td>{{ patient.mobile }}</td>
+        <td>{{ patient.email }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #noPatient>
+  <div class="no-patient">
+    <p>No patient data available or patient not found.</p>
+  </div>
+</ng-template>
+  

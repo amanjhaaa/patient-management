@@ -1,0 +1,9 @@
+<p>Epro works!</p>
+<p>epro works!</p>
+
+  <h2>Patient ID: {{ patientId }}</h2>
+  <p>Epro details for patient {{ patientId }}</p>
+
+<div *ngIf="!patientId" class="no-patient">
+  <p>No patient selected</p>
+</div>

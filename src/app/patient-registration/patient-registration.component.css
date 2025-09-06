@@ -1,0 +1,62 @@
+   form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .form-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group.full-width {
+    flex: 2; /* makes address field bigger */
+  }
+  
+  .form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+  }
+  
+  .gender-options {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding: 6px 0;
+  }
+  
+  .save-btn {
+    background-color: #004aad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  .save-btn:hover {
+    background-color: #003080;
+  }
+  
